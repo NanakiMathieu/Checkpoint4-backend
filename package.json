@@ -1,0 +1,27 @@
+{
+  "name": "checkpoint4-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NanakiMathieu/Checkpoint4-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NanakiMathieu/Checkpoint4-backend/issues"
+  },
+  "homepage": "https://github.com/NanakiMathieu/Checkpoint4-backend#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^15.0.0",
+    "express": "^4.17.2",
+    "mysql2": "^2.3.3"
+  }
+}
