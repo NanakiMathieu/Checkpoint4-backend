@@ -12,6 +12,7 @@ connection.connect(err => {
   else console.log('Connection a la DB ok id ' + connection.threadId)
 })
 
+/**Routing */
 setUpRoutes(app);
 
 app.listen(5000, () => {
