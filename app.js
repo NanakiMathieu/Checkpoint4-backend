@@ -2,6 +2,7 @@ const express = require('express');
 require('dotenv').config();
 const app = express();
 const connection = require('./db-config');
+const cors = require('cors');
 
 const { setUpRoutes } = require('./routes');
 
@@ -11,6 +12,9 @@ connection.connect(err => {
   if (err) console.log('Erreur de connection a la DB', err.stack)
   else console.log('Connection a la DB ok id ' + connection.threadId)
 })
+
+app.use(cors());
+app.use(express.json());
 
 /**Routing */
 setUpRoutes(app);
